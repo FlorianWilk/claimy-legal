@@ -32,7 +32,7 @@
   <p>Die Marke bzw. der Entwicklername im Play Store ist <strong>carbontree</strong>.</p>
 
   <h2>2. Grundprinzip: lokale Nutzung ohne Claimy-Konto</h2>
-  <p>Claimy wird ohne Benutzerkonto und ohne von uns betriebene Claimy-Server verwendet. Rechnungen, Versicherungsdaten, Bescheide und Belege werden grundsätzlich lokal auf deinem Android-Gerät verarbeitet und in verschlüsselter Form gespeichert.</p>
+  <p>Claimy wird ohne eigenes Claimy-Benutzerkonto verwendet. Rechnungen, Versicherungsdaten, Bescheide und Belege werden grundsätzlich lokal auf deinem Android-Gerät verarbeitet und in verschlüsselter Form gespeichert. Ab Version 1.1.0 wird für optionale Premium-Abonnements ein getrennter Kaufprüfungsdienst verwendet; dieser erhält keine Rechnungen, Belege oder Gesundheitsdaten (siehe Abschnitt 16).</p>
   <p>Wir erhalten durch die bloße Nutzung der lokalen App keine Einsicht in diese Inhalte. Eine Übertragung erfolgt nur in den unten beschriebenen Fällen, insbesondere bei ML-Kit-Diagnosemetriken, von dir ausgelöstem Export/Teilen, Backup oder von dir eingerichteter WebDAV-Synchronisierung.</p>
 
   <h2>3. Verarbeitete Daten und Zwecke</h2>
@@ -82,7 +82,7 @@
     <li><a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit – Android Data Disclosure</a></li>
     <li><a href="https://policies.google.com/privacy">Google – Datenschutzerklärung</a></li>
   </ul>
-  <p>Claimy sendet keine Bilder oder Rechnungsinhalte an unsere eigenen Server, weil solche Server nicht betrieben werden.</p>
+  <p>Claimy sendet keine Bilder oder Rechnungsinhalte an unseren Kaufprüfungsdienst. Dieser verarbeitet ausschließlich die in Abschnitt 16 beschriebenen Kauf- und technischen Verbindungsdaten.</p>
 
   <h2>7. Export, Teilen und externe Apps</h2>
   <p>PDF-, CSV-, Bild- und Backup-Dateien werden nur erzeugt, wenn du dies auslöst. Wenn du diese Dateien speicherst, teilst oder mit einer anderen App öffnest, gelten die Datenschutzbestimmungen des jeweiligen Ziels. Exporte können Gesundheitsdaten, Rechnungsdaten und Belege enthalten. Prüfe Empfänger und Freigaben deshalb sorgfältig.</p>
@@ -118,5 +118,12 @@
   <h2>15. Änderungen dieser Erklärung</h2>
   <p>Diese Erklärung wird angepasst, wenn sich App-Funktionen, eingesetzte Dienste oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung wird unter derselben URL bereitgestellt.</p>
   <footer>Die statische HTML-Variante verwendet keine Cookies oder externen Ressourcen. Für das Hosting über GitHub Pages gilt Abschnitt 14.</footer>
+<h2>16. Google Play und optionale Premium-Abonnements</h2>
+<p>Ab Version 1.1.0 kannst du die App 30 Tage ohne Zahlungsdaten testen. Beginn und zuletzt verwendete Zeit werden getrennt von Rechnungsdaten und Backups in der sicheren Schlüsselablage auf dem Gerät gespeichert. Für den Testbeginn wird keine Gerätekennung an uns gesendet. Ein App-Konto wird nicht angelegt.</p>
+<p>Ein kostenpflichtiges Monatsabo entsteht erst nach deiner ausdrücklichen Bestätigung im Google-Play-Kaufdialog. Google verarbeitet dabei Kauf- und Zahlungsdaten nach seinen Bedingungen. Claimy erhält keine Kreditkarten- oder Bankdaten deines Google-Zahlungskontos. Das Abo kannst du in Google Play verwalten und kündigen.</p>
+<p>Zur Prüfung und Wiederherstellung eines Kaufs sendet die App den von Google Play bereitgestellten Kaufnachweis (Purchase Token) per HTTPS an unseren Prüfservice. Der Service prüft ihn über die Google Play Developer API und erhält den Abo-Zustand sowie das Ablaufdatum. Die App erhält nur diese für die Freischaltung nötigen Angaben. Der Kaufnachweis wird vom Prüfservice nicht dauerhaft gespeichert und nicht in Anwendungsprotokolle geschrieben. Lokal werden Kaufnachweis und zeitlich begrenzte Freischaltung in der sicheren Schlüsselablage gespeichert.</p>
+<p>Der Prüfservice wird für carbontree in Google Cloud Run in der Region Frankfurt (europe-west3) betrieben. Google Cloud verarbeitet technische Verbindungsdaten wie IP-Adresse, Zeitpunkt, aufgerufenen Endpunkt und HTTP-Status. Die konfigurierten Plattform-Zugriffsprotokolle werden grundsätzlich 30 Tage aufbewahrt. Der Prüfservice erhält und speichert keine Rechnungs-, Versicherungs-, Beleg- oder Gesundheitsinhalte.</p>
+<p>Zweck ist die Bereitstellung des gekauften Zugangs, die Kaufwiederherstellung und die Verhinderung unberechtigter Freischaltungen. Soweit anwendbar, beruht die Verarbeitung zur Vertragserfüllung auf Art. 6 Abs. 1 lit. b DSGVO und zur technischen Sicherheit auf Art. 6 Abs. 1 lit. f DSGVO. Es werden keine Werbeprofile erstellt und keine Feature-Nutzungsverläufe an diesen Service gesendet.</p>
+<p>Die Kaufprüfung wird bei vorhandenen Käufen und bei Wiederherstellung bzw. Kauf ausgeführt. Ein bestätigter Zugang kann höchstens drei Tage offline gelten und endet spätestens mit dem bestätigten bezahlten Zeitraum. Ohne aktiven Zugang bleiben vorhandene Unterlagen lesbar und exportierbar; Sicherung, Wiederherstellung und Löschung bleiben möglich. Google-Play-Kaufdaten werden unabhängig von lokalen App-Daten nach Googles Vorgaben aufbewahrt. Für Fragen zu unserem Prüfservice ist der oben genannte Support erreichbar.</p>
 <nav aria-label="Rechtliche Informationen"><a href="./">Datenschutz</a> · <a href="impressum.html">Impressum</a> · <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></nav>
 </main></body></html>
