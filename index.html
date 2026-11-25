@@ -5,37 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noarchive">
   <title>Claimy – Datenschutzerklärung</title>
-  <style>
-    :root { color-scheme: light; --teal:#086f64; --ink:#17231f; --muted:#53635d; --line:#dce5e1; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:#f6f9f7; color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
-    main { max-width:880px; margin:auto; padding:48px 24px 72px; }
-    h1 { color:var(--teal); font-size:2.25rem; line-height:1.15; }
-    h2 { margin-top:2.2rem; font-size:1.3rem; line-height:1.3; }
-    p,li { max-width:75ch; }
-    a { color:var(--teal); overflow-wrap:anywhere; }
-    .meta,.notice { background:white; border:1px solid var(--line); border-radius:14px; padding:18px 20px; }
-    .notice { border-left:5px solid var(--teal); }
-    ul { padding-left:1.4rem; }
-    footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
-    @media (max-width:600px) { main { padding:28px 18px 48px; } h1 { font-size:1.85rem; } }
-  </style>
+  <link rel="stylesheet" href="/mib.css">
 </head>
-<body><main>
+<body><a class="skip" href="#content">Zum Inhalt</a>
+<header class="site-header"><a class="wordmark" href="/">MakeItBetterLabs</a></header>
+<main id="content" class="legal">
   <h1>Datenschutzerklärung für Claimy</h1>
   <p class="meta"><strong>Stand: 13.11.2026</strong></p>
   <p>Diese Datenschutzerklärung gilt für die Android-App <strong>Claimy</strong> (Paketname <code>de.claimy.claimy_app</code>). Sie beschreibt, welche Daten die App auf deinem Gerät verarbeitet und wann Daten an andere Dienste übertragen werden.</p>
 
-  <h2>1. Verantwortlicher</h2>
+<nav class="contents" aria-label="Inhaltsverzeichnis"><details><summary>Inhaltsverzeichnis</summary><ul><li><a href="#abschnitt-1">1. Verantwortlicher</a></li><li><a href="#abschnitt-2">2. Grundprinzip: lokale Nutzung ohne Claimy-Konto</a></li><li><a href="#abschnitt-3">3. Verarbeitete Daten und Zwecke</a></li><li><a href="#abschnitt-4">4. Rechtsgrundlagen</a></li><li><a href="#abschnitt-5">5. Lokale Speicherung und Verschlüsselung</a></li><li><a href="#abschnitt-6">6. Kamera und Texterkennung mit Google ML Kit</a></li><li><a href="#abschnitt-7">7. Export, Teilen und externe Apps</a></li><li><a href="#abschnitt-8">8. Verschlüsselte Backups</a></li><li><a href="#abschnitt-9">9. Optionale WebDAV-Synchronisierung</a></li><li><a href="#abschnitt-10">10. Benachrichtigungen und Biometrie</a></li><li><a href="#abschnitt-11">11. Aufbewahrung und Löschung</a></li><li><a href="#abschnitt-12">12. Deine Rechte</a></li><li><a href="#abschnitt-13">13. Datensicherheit und Drittlandübertragungen</a></li><li><a href="#abschnitt-14">14. Hosting dieser Datenschutzerklärung</a></li><li><a href="#abschnitt-15">15. Änderungen dieser Erklärung</a></li><li><a href="#abschnitt-16">16. Google Play und optionale Premium-Abonnements</a></li></ul></details></nav>
+  <h2 id="abschnitt-1">1. Verantwortlicher</h2>
   <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
   <p><strong>Florian Wilk</strong><br>Kastanienallee 17<br>51399 Burscheid<br>Deutschland<br>Telefon: <a href="tel:+4921747112998">02174 7112998</a><br>E-Mail: <a href="mailto:support@carbontree.ai">support@carbontree.ai</a></p>
   <p>Die Marke bzw. der Entwicklername im Play Store ist <strong>carbontree</strong>.</p>
 
-  <h2>2. Grundprinzip: lokale Nutzung ohne Claimy-Konto</h2>
+  <h2 id="abschnitt-2">2. Grundprinzip: lokale Nutzung ohne Claimy-Konto</h2>
   <p>Claimy wird ohne eigenes Claimy-Benutzerkonto verwendet. Rechnungen, Versicherungsdaten, Bescheide und Belege werden grundsätzlich lokal auf deinem Android-Gerät verarbeitet und in verschlüsselter Form gespeichert. Ab Version 1.1.0 wird für optionale Premium-Abonnements ein getrennter Kaufprüfungsdienst verwendet; dieser erhält keine Rechnungen, Belege oder Gesundheitsdaten (siehe Abschnitt 16).</p>
   <p>Wir erhalten durch die bloße Nutzung der lokalen App keine Einsicht in diese Inhalte. Eine Übertragung erfolgt nur in den unten beschriebenen Fällen, insbesondere bei ML-Kit-Diagnosemetriken, von dir ausgelöstem Export/Teilen, Backup oder von dir eingerichteter WebDAV-Synchronisierung.</p>
 
-  <h2>3. Verarbeitete Daten und Zwecke</h2>
+  <h2 id="abschnitt-3">3. Verarbeitete Daten und Zwecke</h2>
   <p>Je nach Nutzung verarbeitet Claimy insbesondere:</p>
   <ul>
     <li>Namen von dir und gegebenenfalls Familienmitgliedern, Versicherungs- und Beihilfenummern, Tarif- und Erstattungsdaten</li>
@@ -49,7 +38,7 @@
   <p>Diese Daten werden verwendet, um Rechnungen und Erstattungen zu verwalten, Berechnungen und Übersichten anzuzeigen, Fristen zu erinnern, Belege zu erkennen sowie von dir gewünschte Exporte, Backups und Synchronisierungen durchzuführen.</p>
   <p>Sofern du Daten anderer Personen einträgst, musst du dazu berechtigt sein und diese Personen gegebenenfalls selbst über die Verarbeitung informieren. Claimy ersetzt keine medizinische, versicherungsrechtliche oder steuerliche Beratung.</p>
 
-  <h2>4. Rechtsgrundlagen</h2>
+  <h2 id="abschnitt-4">4. Rechtsgrundlagen</h2>
   <p>Soweit die DSGVO auf die jeweilige Verarbeitung Anwendung findet, richtet sich die Rechtsgrundlage nach dem Einsatz:</p>
   <ul>
     <li>Verwaltung und Bereitstellung der von dir gewünschten App-Funktionen: Art. 6 Abs. 1 lit. b DSGVO</li>
@@ -59,12 +48,12 @@
   </ul>
   <p>Du kannst eine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, insbesondere durch Löschen der betreffenden Daten, Deaktivieren optionaler Funktionen oder Deinstallieren der App. Bereits erfolgte lokale Verarbeitung bleibt davon unberührt. Bei einer optionalen Cloud- oder Exportübertragung musst du eine erneute Übertragung selbst verhindern bzw. den jeweiligen Empfänger kontaktieren.</p>
 
-  <h2>5. Lokale Speicherung und Verschlüsselung</h2>
+  <h2 id="abschnitt-5">5. Lokale Speicherung und Verschlüsselung</h2>
   <p>Claimy speichert den Datenbestand und importierte Belege mit authentifizierter AES-GCM-Verschlüsselung. Die dafür erforderlichen zufälligen Schlüssel werden durch die sichere Schlüsselablage des Betriebssystems geschützt.</p>
   <p>Zusätzlich kannst du eine App-Sperre mit der Gerätesperre oder Biometrie aktivieren. Die App kann außerdem den Schutz der Appwechsel-Vorschau verwenden.</p>
   <p>Ein Verlust des Geräteschlüssels kann dazu führen, dass lokale Daten nicht mehr geöffnet werden können. Bewahre deshalb bei wichtigen Daten eine verschlüsselte Sicherung und das zugehörige Passwort getrennt und sicher auf. Wir können vergessene Passwörter oder verlorene Schlüssel nicht wiederherstellen.</p>
 
-  <h2>6. Kamera und Texterkennung mit Google ML Kit</h2>
+  <h2 id="abschnitt-6">6. Kamera und Texterkennung mit Google ML Kit</h2>
   <p>Wenn du diese Funktion verwendest, kann Claimy mit deiner Zustimmung zur Kamera auf Bilder zugreifen. Du kannst alternativ vorhandene Bilder oder PDFs auswählen.</p>
   <p>Die Erkennung von Rechnungstext erfolgt mit <strong>Google ML Kit</strong> auf dem Gerät. Nach den offiziellen ML-Kit-Angaben werden die Eingabebilder und die daraus erzeugten OCR-Ergebnisse nicht an Google-Server gesendet.</p>
   <p>ML Kit kann dennoch Google-Server kontaktieren, etwa für Updates und technische Kompatibilität. Außerdem übermittelt ML Kit Diagnose- und Nutzungsmetriken an Google. Dazu können nach Googles Datendokumentation gehören:</p>
@@ -84,41 +73,41 @@
   </ul>
   <p>Claimy sendet keine Bilder oder Rechnungsinhalte an unseren Kaufprüfungsdienst. Dieser verarbeitet ausschließlich die in Abschnitt 16 beschriebenen Kauf- und technischen Verbindungsdaten.</p>
 
-  <h2>7. Export, Teilen und externe Apps</h2>
+  <h2 id="abschnitt-7">7. Export, Teilen und externe Apps</h2>
   <p>PDF-, CSV-, Bild- und Backup-Dateien werden nur erzeugt, wenn du dies auslöst. Wenn du diese Dateien speicherst, teilst oder mit einer anderen App öffnest, gelten die Datenschutzbestimmungen des jeweiligen Ziels. Exporte können Gesundheitsdaten, Rechnungsdaten und Belege enthalten. Prüfe Empfänger und Freigaben deshalb sorgfältig.</p>
 
-  <h2>8. Verschlüsselte Backups</h2>
+  <h2 id="abschnitt-8">8. Verschlüsselte Backups</h2>
   <p>Backups werden mit einem von dir gewählten Passwort verschlüsselt und können auch Belegdateien enthalten. Das Passwort ist für eine spätere Wiederherstellung erforderlich. Du entscheidest, wo die Backup-Datei gespeichert oder mit wem sie geteilt wird.</p>
 
-  <h2>9. Optionale WebDAV-Synchronisierung</h2>
+  <h2 id="abschnitt-9">9. Optionale WebDAV-Synchronisierung</h2>
   <p>WebDAV ist nicht voreingestellt. Wenn du es aktivierst, wird bei einem von dir ausgelösten Abgleich ein verschlüsselter Daten-Snapshot einschließlich verschlüsselter Belege an den von dir konfigurierten WebDAV-Server übertragen.</p>
   <p>Die Inhalte werden vor dem Upload mit deiner separaten Sync-Passphrase verschlüsselt. Der Serverbetreiber erhält die Cloud-Zugangsdaten sowie technische Verbindungsdaten wie IP-Adresse, Zeitpunkte, Dateigrößen und Fehlerinformationen. Die verschlüsselten Snapshots und Dateien liegen beim jeweiligen Betreiber; dessen Datenschutzbestimmungen gelten zusätzlich. Die Sync-Passphrase wird nicht an uns übertragen.</p>
   <p>Bei beidseitigen Änderungen verlangt Claimy eine Konfliktentscheidung. Eine Nur-Ansicht lädt Daten ohne fachliche Änderungen hochzuladen.</p>
 
-  <h2>10. Benachrichtigungen und Biometrie</h2>
+  <h2 id="abschnitt-10">10. Benachrichtigungen und Biometrie</h2>
   <p>Lokale Erinnerungen werden nur mit deiner Aktivierung geplant. Benachrichtigungstexte sind generisch gehalten, enthalten aber Hinweise auf anstehende Fristen. Die Darstellung auf dem Sperrbildschirm hängt auch von deinen Android-Einstellungen ab.</p>
   <p>Biometrische Prüfung und Geräte-PIN werden durch das Betriebssystem durchgeführt. Claimy speichert keine biometrischen Abbilder und erhält nur das Ergebnis der Authentifizierung.</p>
 
-  <h2>11. Aufbewahrung und Löschung</h2>
+  <h2 id="abschnitt-11">11. Aufbewahrung und Löschung</h2>
   <p>Lokale Daten bleiben gespeichert, bis du einzelne Einträge oder die gesamte App löschst. Beim Deinstallieren werden die lokalen App-Daten und die zugehörigen Schlüssel durch Android entfernt. Ohne Backup sind sie dann nicht wiederherstellbar.</p>
   <p>Backups, Exporte und WebDAV-Snapshots unterliegen deiner bzw. der Kontrolle des jeweiligen Empfängers und werden nicht automatisch mit der App gelöscht. Lösche diese Kopien bei Bedarf separat.</p>
 
-  <h2>12. Deine Rechte</h2>
+  <h2 id="abschnitt-12">12. Deine Rechte</h2>
   <p>Im Umfang der gesetzlichen Voraussetzungen hast du insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Widerruf einer Einwilligung. Außerdem hast du das Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde.</p>
   <p>Da wir keinen Zugriff auf deinen lokalen Datenbestand haben, kannst du viele dieser Rechte direkt auf deinem Gerät ausüben. Über die oben genannte Kontaktadresse kannst du dich mit Fragen an uns wenden. Wir können jedoch weder deine lokalen Daten einsehen noch Passwörter oder Schlüssel wiederherstellen.</p>
 
-  <h2>13. Datensicherheit und Drittlandübertragungen</h2>
+  <h2 id="abschnitt-13">13. Datensicherheit und Drittlandübertragungen</h2>
   <p>Wir verwenden technische Schutzmaßnahmen wie lokale und Backup-Verschlüsselung sowie HTTPS für WebDAV. Kein Verfahren bietet absolute Sicherheit. Schütze deshalb dein Gerät, deine Passwörter und deine Exporte.</p>
   <p>Durch ML-Kit-Diagnosemetriken, von dir ausgewählte Drittanbieter-Apps oder einen von dir gewählten WebDAV-Standort kann es auch zu Verarbeitungen außerhalb der Europäischen Union bzw. des Europäischen Wirtschaftsraums kommen. Die Bestimmungen des jeweiligen Anbieters sind zu beachten.</p>
 
-  <h2>14. Hosting dieser Datenschutzerklärung</h2>
+  <h2 id="abschnitt-14">14. Hosting dieser Datenschutzerklärung</h2>
   <p>Diese Datenschutzerklärung wird über <strong>GitHub Pages</strong> bereitgestellt. Beim Aufruf verarbeitet GitHub technische Zugriffsdaten, etwa IP-Adressen und Protokolldaten. Diese Verarbeitung erfolgt durch GitHub nach dessen <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung</a>.</p>
   <p>Claimy selbst verwendet in der App keine Werbe- oder Analyseprofile. Die ML-Kit-Diagnosemetriken sind in Abschnitt 6 beschrieben.</p>
 
-  <h2>15. Änderungen dieser Erklärung</h2>
+  <h2 id="abschnitt-15">15. Änderungen dieser Erklärung</h2>
   <p>Diese Erklärung wird angepasst, wenn sich App-Funktionen, eingesetzte Dienste oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung wird unter derselben URL bereitgestellt.</p>
   <footer>Die statische HTML-Variante verwendet keine Cookies oder externen Ressourcen. Für das Hosting über GitHub Pages gilt Abschnitt 14.</footer>
-<h2>16. Google Play und optionale Premium-Abonnements</h2>
+<h2 id="abschnitt-16">16. Google Play und optionale Premium-Abonnements</h2>
 <p>Ab Version 1.1.0 kannst du die App 30 Tage ohne Zahlungsdaten testen. Beginn und zuletzt verwendete Zeit werden getrennt von Rechnungsdaten und Backups in der sicheren Schlüsselablage auf dem Gerät gespeichert. Für den Testbeginn wird keine Gerätekennung an uns gesendet. Ein App-Konto wird nicht angelegt.</p>
 <p>Ein kostenpflichtiges Monatsabo entsteht erst nach deiner ausdrücklichen Bestätigung im Google-Play-Kaufdialog. Google verarbeitet dabei Kauf- und Zahlungsdaten nach seinen Bedingungen. Claimy erhält keine Kreditkarten- oder Bankdaten deines Google-Zahlungskontos. Das Abo kannst du in Google Play verwalten und kündigen.</p>
 <p>Zur Prüfung und Wiederherstellung eines Kaufs sendet die App den von Google Play bereitgestellten Kaufnachweis (Purchase Token) per HTTPS an unseren Prüfservice. Der Service prüft ihn über die Google Play Developer API und erhält den Abo-Zustand sowie das Ablaufdatum. Die App erhält nur diese für die Freischaltung nötigen Angaben. Der Kaufnachweis wird vom Prüfservice nicht dauerhaft gespeichert und nicht in Anwendungsprotokolle geschrieben. Lokal werden Kaufnachweis und zeitlich begrenzte Freischaltung in der sicheren Schlüsselablage gespeichert.</p>
